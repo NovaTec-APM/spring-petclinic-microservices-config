@@ -21,3 +21,7 @@ management.security.enabled: false
 
 # Logging
 logging.level.org.springframework: INFO
+logging.level.com.netflix.hystrix: DEBUG
+
+# Hystrix timeout increased to 5s
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
